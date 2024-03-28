@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: rgb(255, 246, 230);
+}
+.logoDiv {
+  width: 7%;
+  padding: 7px;
+  margin-left: 30px;
+}
+.logoDiv > a {
+  text-decoration: none;
+}
+.logoDiv img {
+  width: 100%;
+  border-radius: 100%;
+}
+.rightDiv {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.rightDivSpan {
+  margin: 30px;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rightDivSpan > a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 246, 230);
+}
+.rightDivSpan > a:hover {
+  color: red;
+}
+
+@media (min-width: 700px) and (max-width: 1086px) {
+  .logoDiv {
+    width: 10%;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 699px) {
+  .logoDiv {
+    width: 10%;
+    margin-left: 10px;
+  }
+  .rightDiv {
+    width: 80%;
+  }
+  .rightDivSpan {
+    margin: 20px;
+  }
+}
+@media (max-width: 499px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .logoDiv {
+    width: 20%;
+    margin-left: 0px;
+  }
+  .rightDiv {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .rightDivSpan {
+    margin: 0;
+    font-weight: 300;
+  }
+}

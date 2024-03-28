@@ -1,0 +1,276 @@
+.restaurantMenu {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.firstItemDiv {
+  width: 85%;
+  color: rgb(250, 243, 204);
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(68, 0, 0, 0.884),
+    0 6px 20px 0 rgba(68, 1, 1, 0.747);
+}
+.firstItemDiv > img {
+  width: 15%;
+  border-radius: 5px;
+}
+.firstDivItemContent {
+  padding: 7px;
+  width: 72%;
+  margin-left: 20px;
+}
+.firstDivItemContent > span {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.locationValueIcon {
+  font-size: small;
+  color: rgb(248, 239, 188);
+}
+.subFirstDivItemContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 50%;
+}
+.ratingValueSpan {
+  background-color: rgb(11, 67, 75);
+  padding: 4px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.costValueSpan {
+  font-size: medium;
+  font-weight: 700;
+}
+.deliciousValueSpan {
+  padding: 4px;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 3px;
+  background-color: rgb(199, 25, 13);
+}
+.secondHeadingDiv {
+  width: 85%;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 900;
+  color: rgb(158, 18, 8);
+}
+.itemList {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(68, 0, 0, 0.884),
+    0 6px 20px 0 rgba(68, 1, 1, 0.747);
+}
+.itemList:hover {
+  background-color: rgb(254, 255, 202);
+}
+.itemList > img {
+  width: 25%;
+  border-radius: 3px;
+}
+.listCardContentDiv {
+  width: 100%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.listCardContentDiv > h2 {
+  color: rgb(199, 25, 13);
+  text-align: right;
+}
+.listCardContentDiv > span {
+  color: black;
+  font-weight: 700;
+}
+.addToCartButton {
+  padding: 4px;
+  border: none;
+  background-color: rgb(235, 173, 2);
+  cursor: pointer;
+  border-radius: 3px;
+}
+.addToCartButton:hover {
+  background-color: rgb(238, 183, 30);
+}
+
+@media (min-width: 1087px) and (max-width: 1150px) {
+  .subFirstDivItemContent {
+    width: 57%;
+  }
+}
+@media (min-width: 850px) and (max-width: 1086px) {
+  .subFirstDivItemContent {
+    width: 70%;
+  }
+}
+@media (min-width: 750px) and (max-width: 849px) {
+  .firstItemDiv {
+    width: 98%;
+  }
+  .firstItemDiv > img {
+    width: 30%;
+  }
+  .firstDivItemContent {
+    padding: 7px;
+    width: 70%;
+    margin-left: 20px;
+  }
+  .subFirstDivItemContent {
+    width: 80%;
+  }
+  .itemList {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .itemList > img{
+    width: 50%;
+  }
+  .listCardContentDiv{
+    align-items: center;
+    padding-top: 3px;
+  }
+}
+@media (min-width: 650px) and (max-width: 749px) {
+  .firstItemDiv {
+    width: 98%;
+  }
+  .firstItemDiv > img {
+    width: 30%;
+  }
+  .firstDivItemContent {
+    padding: 7px;
+    width: 70%;
+    margin-left: 20px;
+  }
+  .subFirstDivItemContent {
+    width: 100%;
+  }
+  .itemList {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .itemList > img{
+    width: 50%;
+  }
+  .listCardContentDiv{
+    align-items: center;
+    padding-top: 3px;
+  }
+}
+@media (min-width:450px) and (max-width: 649px) {
+  .firstItemDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstItemDiv > img {
+    width: 30%;
+  }
+  .firstDivItemContent {
+    padding: 7px;
+    width: 90%;
+    margin-left: 0px;
+  }
+  .subFirstDivItemContent {
+    width: 100%;
+  }
+  .ratingValueSpan {
+    font-size: small;
+  }
+  .costValueSpan {
+    font-size: small;
+  }
+  .deliciousValueSpan {
+    padding: 3px;
+    font-size: small;
+  }
+  .itemList {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .itemList > img{
+    width: 70%;
+  }
+  .listCardContentDiv{
+    align-items: center;
+    padding-top: 3px;
+  }
+  .listCardContentDiv > h2{
+    font-size: medium;
+  }
+  .listCardContentDiv > span{
+    font-size: small;
+  }
+}
+
+@media (max-width:449px){
+  .firstItemDiv {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstItemDiv > img {
+    width: 30%;
+    border-radius: 50%;
+  }
+  .firstDivItemContent {
+    padding: 0px;
+    width: 95%;
+    margin-left: 0px;
+  }
+  .subFirstDivItemContent {
+    width: 100%;
+  }
+  .itemList {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .itemList > img{
+    width: 80%;
+  }
+  .listCardContentDiv{
+    align-items: center;
+    padding-top: 3px;
+  }
+  .listCardContentDiv > h2{
+    font-size: medium;
+  }
+  .listCardContentDiv > span{
+    font-size: small;
+  }
+}

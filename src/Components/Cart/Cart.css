@@ -1,0 +1,27 @@
+.cart {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zeroItemDiv {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(68, 0, 0, 0.884),
+    0 6px 20px 0 rgba(68, 1, 1, 0.747);
+}
+.zeroItemDiv > a {
+  font-size: large;
+  font-weight: 800;
+  color: rgba(196, 4, 4, 0.884);
+  text-decoration: none;
+}
+.zeroItemDiv > a:hover{
+    color: red;
+    font-size: larger;
+}

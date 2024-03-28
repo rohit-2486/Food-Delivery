@@ -1,0 +1,68 @@
+.login {
+  min-height: 100vh;
+  padding-top: 7%;
+}
+.loginCard {
+  width: 30%;
+  background: linear-gradient(rgb(252, 251, 245), rgb(206, 74, 74));
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(68, 0, 0, 0.884),
+    0 6px 20px 0 rgba(68, 1, 1, 0.747);
+  border-radius: 10px;
+  padding: 20px;
+}
+.loginCard > h2 {
+  color: rgb(199, 27, 27);
+  padding: 5px;
+  margin: 15px;
+}
+.loginCard > input {
+  font-size: medium;
+  width: 60%;
+  padding: 12px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px 0 rgba(3, 64, 66, 0.884),
+    0 3px 10px 0 rgba(1, 83, 72, 0.747);
+}
+.loginCard > button {
+  margin: 15px 0px;
+  padding: 5px 20px;
+  border: none;
+  background-color: rgb(255, 194, 27);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 600;
+}
+.loginCard > p {
+  color: white;
+  font-size: small;
+  font-weight: 700;
+}
+.loginCard > span{
+  color: rgb(43, 255, 0);
+  font-size: medium;
+  font-weight: 700;
+}
+
+@media (min-width: 750px) and (max-width: 1086px) {
+  .loginCard {
+    width: 40%;
+  }
+}
+@media (min-width: 450px) and (max-width: 749px) {
+  .loginCard {
+    width: 55%;
+  }
+}
+@media (max-width: 449px) {
+  .loginCard {
+    width: 70%;
+  }
+}

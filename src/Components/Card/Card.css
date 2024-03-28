@@ -1,0 +1,144 @@
+.card {
+  width: 22%;
+  padding: 7px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(68, 0, 0, 0.884),
+    0 6px 20px 0 rgba(68, 1, 1, 0.747);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  background-color: rgb(254, 255, 202);
+}
+.cardImage {
+  width: 93%;
+  position: relative;
+  border-radius: 10px;
+}
+.cardImage > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.cardImage > span {
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  padding: 3px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: small;
+  color: rgb(255, 246, 230);
+}
+.content {
+  width: 93%;
+}
+.firstContentDiv {
+  padding: 4px;
+}
+.firstContentDiv > h3 {
+  color: rgb(199, 27, 27);
+  margin-bottom: 3px;
+}
+.citySpan {
+  display: flex;
+  align-items: center;
+}
+.locationIcon {
+  font-size: small;
+  color: rgb(160, 155, 155);
+}
+.citySpan > span {
+  color: rgb(116, 115, 115);
+  font-size: small;
+}
+.secondContentDiv {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.starIcon {
+  color: white;
+  font-size: small;
+}
+.ratingSpanRed {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgb(199, 25, 13);
+}
+.ratingSpanRed > span {
+  font-size: small;
+  padding-left: 2px;
+  color: white;
+  font-weight: 700;
+}
+.ratingSpan {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgb(39, 196, 25);
+}
+.ratingSpan > span {
+  font-size: small;
+  padding-left: 2px;
+  color: white;
+  font-weight: 700;
+}
+.vegSpan {
+  background-color: rgb(39, 196, 25);
+  color: white;
+  font-size: small;
+  font-weight: 800;
+  padding: 3px;
+  border-radius: 3px;
+}
+.nonvegSpan {
+  background-color: rgb(199, 25, 13);
+  color: white;
+  font-size: small;
+  font-weight: 800;
+  padding: 3px;
+  border-radius: 3px;
+}
+.thirdContentDiv {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.thirdContentDiv > span {
+    color: rgb(87, 81, 81);
+    font-size: small;
+    font-weight: 900;
+}
+.thirdContentDiv > a{
+    text-decoration: underline;
+    color: rgb(199, 25, 13);
+    font-size: small;
+    font-weight: 900;
+}
+.thirdContentDiv > a:hover{
+    color: rgb(5, 9, 236);
+}
+
+@media (min-width: 750px) and (max-width: 1086px) {
+  .card {
+    width: 31%;
+  }
+}
+@media (min-width: 450px) and (max-width: 749px) {
+  .card {
+    width: 46%;
+  }
+}
+@media (max-width: 449px) {
+  .card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,111 @@
+.filterDiv {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(68, 0, 0, 0.884),
+    0 6px 20px 0 rgba(68, 1, 1, 0.747);
+  width: 95%;
+  margin: 15px auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.searchDiv {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.searchDiv > input {
+  width: 80%;
+  padding: 4px;
+  font-size: large;
+  outline: none;
+  border: 1px solid rgb(155, 154, 154);
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.searchDiv > button {
+  width: 18%;
+  padding: 5px;
+  font-size: large;
+  font-weight: 600;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(235, 173, 2);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.searchDiv > button:hover {
+  background-color: rgb(216, 159, 2);
+}
+.filterButtonDiv {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.filterButtonDiv > button {
+  width: 40%;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.vegButton {
+  background-color: rgb(39, 196, 25);
+}
+.vegButton:hover {
+  background-color: rgb(31, 163, 19);
+}
+.nonvegButton {
+  background-color: rgb(199, 25, 13);
+}
+.nonvegButton:hover {
+  background-color: rgb(165, 22, 12);
+}
+
+@media (min-width: 615px) and (max-width: 850px) {
+  .filterButtonDiv {
+    width: 30%;
+  }
+  .searchDiv > input {
+    width: 75%;
+  }
+  .searchDiv > button {
+    width: 25%;
+    font-size: large;
+    font-weight: 500;
+  }
+}
+@media (max-width: 614px) {
+  .filterDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchDiv {
+    width: 90%;
+  }
+  .searchDiv > input {
+    width: 75%;
+  }
+  .searchDiv > button {
+    width: 25%;
+    font-size: large;
+    font-weight: 500;
+  }
+  .filterButtonDiv {
+    width: 60%;
+    margin-top: 6px;
+  }
+  .filterButtonDiv > button {
+    width: 40%;
+    padding: 5px 3px;
+  }
+}

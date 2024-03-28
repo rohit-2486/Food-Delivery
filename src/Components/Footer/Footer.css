@@ -1,0 +1,84 @@
+.footer{
+    background-color: black;
+    color: rgb(255, 246, 230);
+    padding: 20px;
+}
+.tableDivHeading{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.tableDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+.listOfTable{
+    width: 22%;
+    padding-left: 40px;
+}
+.listOfTable > ul{
+    list-style: square;
+}
+.listOfTable > ul > li{
+    padding: 5px 0;
+}
+.createdByDiv{
+    /* border: 1px solid blue; */
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(184, 182, 179);}
+.createdByDiv > p{
+    font-size: small;
+}
+.createdByDiv > p > span{
+    font-size: large;
+    font-weight: 600;
+    color: rgb(0, 230, 230);
+}
+
+
+@media (min-width: 700px) and (max-width: 1086px) {
+    .tableDiv{
+        flex-wrap: wrap;
+        padding-left: 30px;
+    }
+    .listOfTable{
+        width: 44%;
+    }
+    .listOfTable > ul{
+        width: 60%;
+        margin: auto;
+    }
+  }
+
+
+
+@media (min-width: 500px) and (max-width: 699px) {
+    .tableDiv{
+        flex-wrap: wrap;
+        width: 70%;
+        padding-left: 40px;
+    }
+    .listOfTable{
+        width: 44%;
+    }
+    .listOfTable > ul{
+        width: 95%;
+        margin: auto;
+    }
+  }
+  @media (max-width: 499px) {
+    .tableDiv{
+        flex-wrap: wrap;
+        width: 70%;
+        padding-left: 40px;
+    }
+    .listOfTable{
+        width: 88%;
+    }
+    .listOfTable > ul{
+        width: 95%;
+        margin: auto;
+    }
+  }
